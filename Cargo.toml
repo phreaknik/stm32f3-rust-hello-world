@@ -1,0 +1,31 @@
+[package]
+name = "stm32f3discovery-led-spinner"
+version = "0.1.0"
+authors = ["John Boyd <johnboydiv@gmail.com>"]
+description = "A 'spinning LED' demo for the STM32F3 Discovery board."
+keywords = [
+    "arm",
+    "cortex-m",
+    "stm",
+    "stm32",
+]
+categories = [
+    "embedded",
+    "no-std",
+]
+license = "MIT"
+repository = "https://github.com/phreaknik/stm32f3discovery-led-spinner"
+
+[profile.release]
+lto = true
+debug = true
+
+[dependencies]
+f3 = { git = "https://github.com/japaric/f3" } # Temporarily pull from github until 0.5.0 is released.
+cortex-m-rtfm = "0.2.1"
+cortex-m-semihosting = "0.2.0"
+
+[dependencies.cortex-m-rt]
+version = "0.3.5"
+#features = ["panic-over-semihosting"]
+features = ["abort-on-panic"]
