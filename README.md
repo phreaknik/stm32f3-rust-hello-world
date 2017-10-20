@@ -1,5 +1,5 @@
 # stm32f3-rust-hello-world
-A serial loop-back project to use as a template for the Rust [RTFM framework](http://blog.japaric.io/rtfm-v2/) on the STM32F3 mcu. This project was developed using the STM323 Discovery Board, using the tutorials at [blog.japaric.io](http://blog.japaric.io) for guidance.
+A serial loop-back project to use as a template for the Rust [RTFM framework](http://blog.japaric.io/rtfm-v2/) on the STM32F3 mcu. This project was developed using the STM32F3 Discovery Board, using the tutorials at [blog.japaric.io](http://blog.japaric.io) for guidance.
 
 
 This project is and embedded project, meaning `rust-std` is not applicable on our system. To build this project without `rust-std`, use [Xargo](https://github.com/japaric/xargo) instead of Rust's native Cargo.
